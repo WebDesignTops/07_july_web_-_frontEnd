@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Focus</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		form{
+			border: 1px solid black;
+			background: skyblue;
+			width: 150px;
+			padding: 5px;
+			text-align: center;
+		}
+		label{
+
+		}
+	</style>
+</head>
+<body>
+
+
+	<form>
+		<label>Login </label>
+		<input type="text" name="" placeholder="username" id="test"><br><br>
+		<input type="password" name="" placeholder="Password" id="test1"><br><br>
+		<input type="submit" name="" value="Login">
+	</form>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#test").focus(function(){
+			$("#test").css("backgroundColor","lime")
+		});
+		$("#test1").focus(function(){
+			$("#test1").css("backgroundColor","yellow")
+		});
+		
+	});
+</script>
+</html>

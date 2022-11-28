@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Get Method</title>
+</head>
+<body>
+
+	<p>This is Get method to know <strong>Text</strong> as well as <u>HTML</u> tag</p>
+	<button id="btn">get text</button>
+	<button id="btn1">Get HTML Tag</button>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$("#btn").click(function(){
+			alert($("p").text())
+		});
+
+		$("#btn1").click(function(){
+			alert($("p").html())
+		});
+
+
+	});
+</script>
+</html>

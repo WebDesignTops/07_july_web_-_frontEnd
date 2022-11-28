@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slide-Up & Down</title>
+	<style type="text/css">
+		.slider{
+			width: 100%;
+			height: 100px;
+			background: lime;
+		}
+		.slide{
+			width: 100%;
+			height: 200px;
+			background: yellow;
+			display: none;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="slider">
+		<button id="btn1">Slide Down</button>
+		<button id="btn2">Slide Up</button>
+		<div class="slide"></div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$(".slide").slideDown(2000)
+		});
+		$("#btn2").click(function(){
+			$(".slide").slideUp(2000)
+		});
+	});
+	</script>
+</html>
+
+
+
+
+
+
+

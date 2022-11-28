@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slide Toggle</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		.slider{
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			background: limegreen;
+		}
+		.slider button{
+
+			margin-top: 75px
+		}
+		.slide{
+			width: 100%;
+			height: 400px;
+			background: yellow;
+			display: none;
+			/*margin-top: 50px;*/
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="slider">
+		<button>Slide Toggle</button>
+		<div class="slide">This is Slide</div>
+	</div>
+
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".slide").slideToggle(2000)
+		});
+	});
+</script>
+</html>

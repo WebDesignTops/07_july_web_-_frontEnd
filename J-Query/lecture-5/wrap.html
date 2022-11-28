@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Wrap</title>
+	<style type="text/css">
+		p{
+			background: red;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	
+	<h1>This is First H1 </h1>
+	<h1>This is Second H1 </h1>
+	<button>wrap</button>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("h1").wrap("<p></p>")
+		});	
+	});
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Keyboard Events</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<input type="text" name="">
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("body").keypress(function(){
+			alert("you are Typing something")
+		});
+		// $("body").keyup(function(){
+		// 	alert("you pressed key up")
+		// });
+		// $("body").keydown(function(){
+		// 	alert("you pressed key down")
+		// })
+	});
+</script>
+</html>
