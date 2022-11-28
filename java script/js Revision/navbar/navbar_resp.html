@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navbar Responsive</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		header{
+			width: 100%;
+			height: 100px;
+			background: skyblue;
+
+		}
+		.logo{
+			width: 15%;
+			height: 100%;
+			float: left;
+		}
+		.logo img{
+			width: 100%;
+			height: 100%;
+		}
+		nav{
+			float: right;
+			height: inherit;
+
+		}
+		nav ul li{
+			display: inline-block;
+
+			padding: 15px;
+		}
+		nav ul li a{
+			font-size: 25px;
+			text-decoration: none;
+			/*color: whitesmoke;*/
+		}
+		.fa{
+			font-size: 25px;
+			position: absolute;
+			right: 10px;
+			top: 25px;
+			display: none;
+		}
+		@media(max-width: 480px)
+		{
+			.fa
+			{
+				display: block;
+			}
+			nav{
+				width: 100%;
+				display: none;
+				transition: 5s;
+				/*border: 1px solid black;*/
+			}
+			nav ul{
+				text-align: center;
+				border: 1px solid black;
+			}
+			nav ul li{
+				width: 100%;
+				
+			}
+
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="logo2.jpg">
+		</div>
+		
+			<i class="fa fa-bars" onclick="menu()"></i>
+		
+		<nav id="menu">
+			<ul>
+				<i class="fa fa-bars" onclick="hide()"></i>
+				<li>
+					<a href="">Home</a>
+				</li>
+				<li>
+					<a href="">About</a>
+				</li>
+				<li>
+					<a href="">Service</a>
+				</li>
+				<li>
+					<a href="">Product</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+</body>
+<script type="text/javascript">
+ function menu(){
+ 	document.getElementById('menu').style.display="block";
+ 	
+ }
+ function hide(){
+ 	document.getElementById('menu').style.display="none";
+ }
+</script>
+</html>
