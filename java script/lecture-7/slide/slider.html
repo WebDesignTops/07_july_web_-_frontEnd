@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slider</title>
+</head>
+<body>
+	<div>
+		<img src="back.jpg" width="50%" height="50%" class="i1">
+		<img src="banner1.jpg" width="50%" height="50%" class="i1">
+		<img src="banner2.jpg" width="50%" height="50%" class="i1">
+		<img src="banner3.jpg" width="50%" height="50%" class="i1">
+		<img src="bg.jpg" width="50%" height="50%" class="i1">
+		<img src="bg1.jpg" width="50%" height="50%" class="i1">
+		<img src="bg2.jpg" width="50%" height="50%" class="i1">
+		<img src="bg3.jpg" width="50%" height="50%" class="i1">
+		<img src="chef1.jpg" width="50%" height="50%" class="i1">
+		<img src="dish.jpg" width="50%" height="50%" class="i1">
+		<img src="eat.jpg" width="50%" height="50%" class="i1">
+	</div>
+
+</body>
+<script type="text/javascript">
+	ar=0;
+	function slider(){
+		var img=document.getElementsByClassName('i1')
+		for(var i=0;i<=10;i++){
+			img[i].style.display="none";
+		}
+		if(ar==img.length){
+			ar=0;
+		}
+		img[ar].style.display="block";
+		ar++;
+		setTimeout(slider,1000)
+		}
+	slider();
+
+
+
+
+
+
+
+
+</script>
+</html>

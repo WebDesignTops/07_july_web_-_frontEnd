@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Change CSS</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="bg"></div>
+	<h5 id="h5">Font - size going to be change</h5>
+	<button onclick="bgc()">click here</button>
+
+
+</body>
+	<script type="text/javascript">
+		function bgc(){
+			document.getElementById('bg').style.background="red";
+			document.getElementById('h5').style.fontSize="40px";
+		}
+
+	</script>
+
+</html>

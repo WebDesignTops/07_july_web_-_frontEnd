@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<form>
+		<input type="text" name="" id="test">
+		<button onclick="show()">click here</button>
+	</form>
+
+
+	<div id="rcv">
+		
+	</div>
+
+
+
+</body>
+	<script type="text/javascript">
+		function show(){
+			var t=document.getElementById('test').value;
+			var r;
+
+			if(t<1 || t>10)
+			{
+				r="Input is Valid";
+			}
+			else{
+				r="input is Not Valid"
+			}
+
+			document.getElementById('rcv').innerHTML=r;
+
+
+		}
+	</script>
+</html>
+
+
+
+
+
+
+
+

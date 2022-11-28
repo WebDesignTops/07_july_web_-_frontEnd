@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slider</title>
+</head>
+<body>
+
+	<div>
+		<img src="back.jpg" width="200px" height="200px" class="sl">
+		<img src="banner1.jpg" width="200px" height="200px" class="sl">
+		<img src="banner2.jpg" width="200px" height="200px" class="sl">
+		<img src="banner3.jpg" width="200px" height="200px" class="sl">
+		<img src="bg.jpg" width="200px" height="200px" class="sl">
+		<img src="bg1.jpg" width="200px" height="200px" class="sl">
+		<img src="bg2.jpg" width="200px" height="200px" class="sl">
+		<img src="bg3.jpg" width="200px" height="200px" class="sl">
+		<img src="chef1.jpg" width="200px" height="200px" class="sl">
+		<img src="dish.jpg" width="200px" height="200px" class="sl">
+		<img src="eat.jpg" width="200px" height="200px" class="sl">
+
+	</div>
+
+
+</body>
+<script type="text/javascript">
+counter=0;
+function slider(){
+	var img=document.getElementsByClassName('sl');
+
+	for( var i=0; i<=10; i++)
+	{
+		img[i].style.display="none";
+	}
+		if(counter==img.length)
+		{
+			counter=0;
+		}
+		img[counter].style.display="block";
+		counter++;
+		setTimeout(slider,2000)
+}
+slider();
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+

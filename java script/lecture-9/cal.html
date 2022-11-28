@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+
+	<input type="text" name="" placeholder="enter the nummber" id="first"><br><br>
+	<select id="option">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<br><br>
+	<input type="text" name="" placeholder="enter the number" id="second">
+	<br><br>
+	<button onclick="cal()">=</button>
+	<br><br>
+	<input type="text" name="" readonly id="result">
+
+</body>
+<script type="text/javascript">
+	function cal()
+	{
+		var x=document.getElementById('first').value;
+		var y=document.getElementById('option').value;
+		var z=document.getElementById('second').value;
+
+
+		if(y == '+')
+		{
+			var t = parseInt(x) + parseInt(z)
+			
+		}
+		if(y == '-')
+		{
+			var t = parseInt(x) - parseInt(z)
+		}
+		if(y == '*')
+		{
+			var t= parseInt(x) * parseInt(z)
+		}
+		if( y == '/')
+		{
+			var t= parseInt(x) / parseInt(z)
+		}
+		if(y == '%')
+		{
+			var t= parseInt(x) % parseInt(z)
+		}
+
+
+
+
+			document.getElementById('result').value=t;
+	}
+
+
+
+</script>
+</html>

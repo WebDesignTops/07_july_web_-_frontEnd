@@ -1,0 +1,18 @@
+Types of Variable...????
+local variable...
+globle variable..
+
+
+parseInt= to convert data into number
+
+
+array variable...????
+when you declared variable , ram memory...
+a=5,
+memory one partition , a name value =5
+1kb =5
+1kb=5,10,20,15,25..
+var ar[]={5,10,15,20,25}
+var ar=[5,10,15,20,25]
+index of array
+0,1,2,3.....

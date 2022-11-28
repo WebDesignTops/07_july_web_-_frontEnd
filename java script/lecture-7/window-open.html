@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bom</title>
+</head>
+<body>
+
+	<button onclick="windowOpen()">click here to open new window</button>
+	<button onclick="windowClose()">click here to close</button>
+	
+</body>
+<script type="text/javascript">
+	var myWindow;
+	function windowOpen(){
+		myWindow=window.open("https://www.google.com/","_blank","width=2000px, height=400px")
+	}
+	function windowClose()
+	{
+		myWindow.close();
+	}
+	
+</script>
+</html>
