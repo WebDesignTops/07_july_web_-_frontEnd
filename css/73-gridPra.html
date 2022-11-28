@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Food Blog</title>
+	<style type="text/css">
+		.main{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 10px;
+		}
+		.item{
+			/*width: 350px;*/
+			height: 300px;
+			border: 1px solid black;
+			position: relative;
+		}
+		.item img{
+			width: 100%;
+			height: 80%;
+		}
+		.item h4{
+			text-align: center;
+			margin-top: 5px;
+		}
+		.item button{
+			
+			position: absolute;
+			top: 90%;
+			left: 2%;
+			border: none;
+			font-size: 20px;
+			padding: 0px 15px;
+			background: green;
+			color: white;
+			border-radius: 10%;
+		}
+		@media (max-width: 980px)
+		{
+
+			.main{
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+		}
+		@media (max-width: 720px){
+			.main{
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+		}
+		@media (max-width: 480px)
+		{
+			.main{
+				grid-template-columns: repeat(1, 1fr);
+			}
+			.item button{
+				margin-left: 40%;
+				
+			}
+		}*/
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div class="item">
+			<img src="burger.jpg">
+			<h4>Burger</h4>
+			<button >Order</button>
+		</div>
+		<div class="item">
+			<img src="chips.jpg">
+			<h4>Chips</h4>
+			<button>Order</button>
+		</div>
+		<div class="item">
+			<img src="fries.jpg">
+			<h4>Fries</h4>
+			<button>Order</button>
+		</div>
+		<div class="item">
+			<img src="pasta.jpg">
+			<h4>Pasta</h4>
+			<button>Order</button>
+		</div>
+		<div class="item">
+			<img src="pizza.jpg">
+			<h4>Pizza</h4>
+			<button>Order</button>
+		</div>
+		<div class="item">
+			<img src="roll.jpg">
+			<h4>Roll</h4>
+			<button>Order</button>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>

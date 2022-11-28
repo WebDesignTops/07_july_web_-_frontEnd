@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid</title>
+	<style type="text/css">
+		#ds{
+			border: 1px solid black;
+			width: 700px;
+			
+			margin-left: 20%;
+		}
+		.col
+		{
+			background: red;
+			border: 1px solid black;
+		}
+		.grid{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 10px;
+			padding: 5px 10px;
+			/*grid-template-columns: 350px 350px ;*/
+			/*grid-template-rows: 350px 350px;*/
+
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Grid System</h1>
+	<div class="grid" id="ds">
+		<div class="col">
+			<h1>This is Col 1</h1>
+		</div>
+		<div class="col">
+			<h1>This is Col 2</h1>
+		</div>
+		<div class="col">
+			<h1>This is Col 3</h1>
+		</div>
+		<div class="col">
+			<h1>This is Col 4</h1>
+		</div>
+		<div class="col">
+			<h1>This is Col 5</h1>
+		</div>
+		<div class="col">
+			<h1>This is Col 6</h1>
+		</div>
+		<div class="col">
+			<h1>This is Col 7</h1>
+		</div>
+		<div class="col">
+			<h1>This is Col 8</h1>
+		</div>
+
+	</div>
+
+</body>
+</html>

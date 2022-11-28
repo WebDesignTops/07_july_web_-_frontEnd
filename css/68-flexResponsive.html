@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive</title>
+	<style type="text/css">
+		.main{
+			width: 80%;
+			height: auto;
+			/*border: 1px solid black;*/
+			display: flex;
+			margin-left: 10%;
+			justify-content: space-between;
+		}
+		.col{
+			width: 31%;
+			height: inherit;
+			border: 1px solid black;
+			padding: 10px;
+		}
+		@media (max-width: 480px)
+		{
+			.main
+			{
+				flex-direction: column;
+			}
+			.col{
+				width: 100%;
+				border: none;
+			}
+
+		}
+		@media (max-width: 576px)
+		{
+			.main{
+				flex-direction: column;
+				/*width: 100%;*/
+				align-items: center;
+
+			}
+			.col{
+
+				width: 90%;
+				border: none;
+				height: auto;
+				border: 1px solid;
+				padding: 5px;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="main">
+		<div class="col">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="col">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="col">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+
+
+</body>
+</html>

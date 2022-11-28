@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drop Down list</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+
+		}
+		nav ul{
+			list-style: none;
+		}
+		nav ul li{
+			float: left;
+/*			padding: 5px;*/
+			font-size: 40px;
+			background: red;
+			border: 1px solid black;
+			height: 60px;
+			width: 160px;
+			line-height: 60px;
+		}
+		nav ul li ul
+		{
+		
+			display: none;
+
+		}
+		nav ul li ul li{
+			background-color: lime;
+		}
+		nav ul li:hover ul{
+
+			display: block;
+			
+
+		}
+	</style>
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>Product</li>
+			<li>Course
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+					<li>JQ</li>
+					<li>Bootstrap</li>
+				</ul>
+			</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+
+
+
+</body>
+</html>

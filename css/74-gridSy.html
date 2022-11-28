@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid System</title>
+	<style type="text/css">
+		.a{
+			border: 1px solid black;
+			padding: 5px;
+
+		}
+		#a1{
+			background: green;
+		}
+		#a2{
+			background: pink;
+		}
+		#a3{
+			background: purple;
+		}
+		#a4{
+			background: coral;
+		}
+		#a5{
+			background: gray;
+		}
+		#a6{
+			background: yellow;
+		}
+		#a7{
+			background: blue;
+			width: 100%;
+
+		}
+		#a8{
+			background: lime;
+		}
+		#a9{
+			background: red;
+		}
+		.main
+		{
+			display: grid;
+			width: 800px;
+			margin-left: 20%;
+			margin-top: 10%;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 100px 200px 100px;
+			grid-gap: 10px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+		<div class="main">
+			<div class="a" id="a1">This is A1</div>
+			<div class="a" id="a2">This is A1</div>
+			<div class="a" id="a3">This is A1</div>
+			<div class="a" id="a4">This is A1</div>
+			<div class="a" id="a5">This is A1</div>
+			<div class="a" id="a6">This is A1</div>
+			<!-- <div class="a" id="a7">This is A1</div> -->
+			
+		</div>	
+
+
+</body>
+</html>
